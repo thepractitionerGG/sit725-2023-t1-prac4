@@ -1,0 +1,63 @@
+We are going to add a database to the project.
+
+We are going to replace the cards and the cards will come from the database.
+Submit button will send a request to server and server will send a request to database.
+
+npm install
+node .\startServer.js
+
+Download MongoDB Download Community
+MongoDB Compass Download
+
+Connect to MongoDB Compass.
+
+---
+
+## Check the functioning
+
+Overall pathway:
+
+/\* Not Require (but if you want to try something different)
+Let's go to MongoDB and sign up if you're not already signed up (Pick Free version).
+
+- Put a username and password
+- chose cloud environment (For IP, we can use 0.0.0.0.0/0 universal IP)
+  Finish and close
+
+Click connect then to drivers and get your connect string.
+
+- Click view full code sample and copy the code.
+- Add the code in your server.js file
+- do "npm install mongodb@4.4.1" on terminal
+- adjust the code and replace the password with your actual password (make sure you also remove < sign)
+  You can modify the function to 'runDBConnect' and call that in the listen port if you want.
+
+Try connecting to database via npm start and see the message that its successful.
+Not Required Part End \*/
+
+POST API, front end -> server -> DB
+
+GET API, front end -> server -> DB , DB (round trip)
+
+Let's make a collection now:
+collections are actually where data is stored.
+
+- Let's write a POST API and also add a postCat function.
+
+Now, let's look at script.js
+
+- Remove cardList
+- Remove the relevant code in id='card-section'
+  Open with Live server to cross-check there are no cards.
+
+Now, we will configure the front-end to send API request to the server, we already have a location '/api/cat'
+Send a type of POST API request.
+We can use jquery to send the ajax request. (function PostCat).
+Add necessary code in script.js and also fix the form in both html and script as per title, subTitle, etc.
+
+Do the similar for GET Request.
+
+Only the result is missing now, lets' define that in app.post
+Let's test this in the live server.
+
+Fill in the form, it should work and data should be stored in your database.

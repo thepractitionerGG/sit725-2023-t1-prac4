@@ -1,0 +1,19 @@
+{
+  "name": "sol-prac-4-pending",
+  "version": "1.0.0",
+  "description": "",
+  "main": "startServer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon startServerWithMongo.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "mongo": "^0.1.0",
+    "mongodb": "^6.3.0",
+    "nodemon": "^3.0.2"
+  }
+}
